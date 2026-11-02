@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syarif Muhammad Fadhilah - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1E293B',
+                            900: '#0F172A',
+                            950: '#020617',
+                        },
+                        gold: {
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                            700: '#B45309',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#hero" class="text-xl font-bold text-navy-900 tracking-tight flex items-center gap-2">
+                <span class="w-9 h-9 rounded-lg bg-navy-900 text-gold-500 flex items-center justify-center font-extrabold text-lg shadow-sm">S</span>
+                <span>Syarif<span class="text-gold-600">.MF</span></span>
+            </a>
+
+            <!-- Navigation Desktop -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-gold-600 transition-colors">About Me</a>
+                <a href="#education" class="hover:text-gold-600 transition-colors">Education</a>
+                <a href="#experience" class="hover:text-gold-600 transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-gold-600 transition-colors">Projects & Publications</a>
+                <a href="#skills" class="hover:text-gold-600 transition-colors">Skills</a>
+                <a href="#certificates" class="hover:text-gold-600 transition-colors">Certificates</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-3">
+                <a href="https://www.linkedin.com/in/syarif-muhammad-fadhilah-6059a9435" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-slate-100 text-navy-900 hover:bg-gold-500 hover:text-navy-950 flex items-center justify-center transition-all shadow-sm" title="LinkedIn Profile">
+                    <i class="fa-brands fa-linkedin-in text-lg"></i>
+                </a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-navy-900 text-gold-400 font-semibold text-sm hover:bg-navy-800 hover:text-gold-300 transition-all shadow-md hover:shadow-lg">
+                    Contact Me
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-700 hover:text-navy-900 focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Navigation Drawer Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-slate-700 hover:text-gold-600 font-medium">About Me</a>
+            <a href="#education" class="block py-2 text-slate-700 hover:text-gold-600 font-medium">Education</a>
+            <a href="#experience" class="block py-2 text-slate-700 hover:text-gold-600 font-medium">Experience</a>
+            <a href="#projects" class="block py-2 text-slate-700 hover:text-gold-600 font-medium">Projects & Publications</a>
+            <a href="#skills" class="block py-2 text-slate-700 hover:text-gold-600 font-medium">Skills</a>
+            <a href="#certificates" class="block py-2 text-slate-700 hover:text-gold-600 font-medium">Certificates</a>
+            <a href="#contact" class="block py-2 text-center rounded-lg bg-navy-900 text-gold-400 font-semibold">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="pt-32 pb-20 md:pt-40 md:pb-28 bg-pattern overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold-50 border border-gold-200 text-gold-700 text-xs font-semibold uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></span>
+                        Finance, Administration & Operations
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-navy-900 tracking-tight leading-tight">
+                        Syarif Muhammad <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-600 to-gold-400">Fadhilah</span>
+                    </h1>
+
+                    <!-- Tagline -->
+                    <div class="p-4 rounded-xl bg-white/80 backdrop-blur border-l-4 border-gold-500 shadow-sm">
+                        <p class="text-lg md:text-xl text-slate-700 italic font-medium">
+                            "Analytical Mindset, Financial Insight, Professional Growth."
+                        </p>
+                    </div>
+
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Lulusan Manajemen Keuangan Syariah UIN Sunan Gunung Djati Bandung dengan pemahaman dasar keuangan yang baik serta pengalaman magang di Bank Syariah Indonesia. Memiliki ketelitian tinggi dalam pengolahan data, administrasi dokumen, serta siap belajar dan berkembang dalam peran Finance, Administration, maupun Operations.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap gap-4 justify-center lg:justify-start pt-2">
+                        <a href="#contact" class="px-7 py-3.5 rounded-xl bg-navy-900 text-gold-400 font-semibold hover:bg-navy-800 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex items-center gap-2">
+                            <span>Hubungi Saya</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="#experience" class="px-7 py-3.5 rounded-xl bg-white border border-slate-300 text-navy-900 font-semibold hover:bg-slate-50 hover:border-gold-500 transition-all shadow-sm flex items-center gap-2">
+                            <span>Lihat Pengalaman</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Info Badges -->
+                    <div class="pt-6 flex flex-wrap justify-center lg:justify-start gap-6 text-slate-500 text-xs font-medium">
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-gold-600"></i> Bandung, Jawa Barat</span>
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-graduation-cap text-gold-600"></i> IPK: 3.65 / 4.00</span>
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-briefcase text-gold-600"></i> Internship Ex-BSI</span>
+                    </div>
+                </div>
+
+                <!-- Hero Image (Bingkai Bulat) -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-gold-500 group bg-slate-200">
+                        <img src="https://i.ibb.co.com/rf1sKXrr/lv-0-20261028165547.jpg" 
+                             alt="Syarif Muhammad Fadhilah" 
+                             class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/400x400/0F172A/F59E0B?text=Syarif+MF';">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-950/40 via-transparent to-transparent pointer-events-none"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <h2 class="text-xs font-bold text-gold-600 uppercase tracking-widest mb-2">About Me</h2>
+                <h3 class="text-3xl font-extrabold text-navy-900 sm:text-4xl">Tentang Saya</h3>
+            </div>
+
+            <div class="bg-slate-50 rounded-2xl p-6 sm:p-10 border border-slate-200 shadow-sm grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <div class="md:col-span-2 space-y-4 text-slate-700 leading-relaxed text-sm sm:text-base">
+                    <p class="text-justify">
+                        Fresh Graduate S1 Manajemen Keuangan Syariah UIN Sunan Gunung Djati Bandung dengan IPK 3,65 dan memiliki kompetensi di bidang Administrasi Keuangan, Perbankan, Pengelolaan Data, dan Pelaporan Keuangan. Berpengalaman magang sebagai Back Office di Bank Syariah Indonesia KCP Moh Toha, dengan kontribusi membantu pengelolaan dan digitalisasi dokumen nasabah, pengelompokan data, pemeriksaan kelengkapan berkas pengajuan KUR, serta mendukung kegiatan promosi produk perbankan. Menguasai Microsoft Excel, administrasi perbankan, pengelolaan dokumen, dan analisis data. Memiliki kemampuan komunikasi, kerja sama tim, manajemen waktu, pemecahan masalah, dan ketelitian dalam bekerja. Siap mengembangkan kompetensi di bidang Finance, Banking, Accounting, dan Administrasi Keuangan serta berkontribusi secara profesional dalam mendukung operasional dan pencapaian target perusahaan.
+                    </p>
+                </div>
+
+                <!-- Ringkasan Keahlian Utama -->
+                <div class="space-y-4">
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
+                        <div class="p-3 rounded-lg bg-gold-50 text-gold-600">
+                            <i class="fa-solid fa-calculator text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy-900 text-sm">Administrasi Keuangan</h4>
+                            <p class="text-xs text-slate-500">Pencatatan, pengolahan data, dan penyusunan laporan.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
+                        <div class="p-3 rounded-lg bg-navy-50 text-navy-900">
+                            <i class="fa-solid fa-file-shield text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy-900 text-sm">Pengecekan Dokumen</h4>
+                            <p class="text-xs text-slate-500">Membantu verifikasi persyaratan KUR dan administrasi NPWP.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
+                        <div class="p-3 rounded-lg bg-gold-50 text-gold-600">
+                            <i class="fa-solid fa-folder-tree text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-navy-900 text-sm">Pengelolaan Arsip</h4>
+                            <p class="text-xs text-slate-500">Scanning dan pengelompokkan data nasabah dengan rapi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <h2 class="text-xs font-bold text-gold-600 uppercase tracking-widest mb-2">Education</h2>
+                <h3 class="text-3xl font-extrabold text-navy-900 sm:text-4xl">Latar Belakang Pendidikan</h3>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+                <!-- Foto Pendidikan -->
+                <div class="lg:col-span-5">
+                    <div class="rounded-xl overflow-hidden shadow-md aspect-[4/3] border border-slate-200">
+                        <img src="https://i.ibb.co.com/MxxZ1S28/IMG-20260729-WA0156.jpg" 
+                             alt="Pendidikan UIN Sunan Gunung Djati Bandung" 
+                             class="w-full h-full object-cover"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x450/0F172A/F59E0B?text=UIN+Bandung';">
+                    </div>
+                </div>
+
+                <!-- Detail Pendidikan -->
+                <div class="lg:col-span-7 space-y-5">
+                    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+                        <div>
+                            <span class="text-xs font-bold text-gold-600 uppercase">Bachelor Degree (S1)</span>
+                            <h4 class="text-2xl font-bold text-navy-900">UIN Sunan Gunung Djati Bandung</h4>
+                            <p class="text-slate-600 font-medium">S1 Manajemen Keuangan Syariah</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="inline-block px-3 py-1 rounded-full bg-navy-900 text-gold-400 text-xs font-semibold">2022 – 2026</span>
+                            <p class="text-sm font-bold text-emerald-600 mt-1">IPK: 3.65 / 4.00</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h5 class="text-xs font-bold uppercase text-slate-400 tracking-wider mb-3">Mata Kuliah Relevan</h5>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200">Akuntansi Keuangan dan Perbankan Syariah</span>
+                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200">Bank dan Industri Non Bank</span>
+                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200">Manajemen Keuangan LKS Bank dan Non Bank</span>
+                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200">Manajemen Pemasaran Syariah</span>
+                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200">Analisis Laporan Keuangan Syariah</span>
+                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200">Auditing Syariah</span>
+                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200">Budgetting</span>
+                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200">Akuntansi Manajemen dan Biaya</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-gold-50/50 border border-gold-200 text-slate-700 text-sm">
+                        <i class="fa-solid fa-graduation-cap text-gold-600 mr-2"></i>
+                        Lulus dengan predikat sangat memuaskan dan menyelesaikan studi dengan fokus riset pada transparansi dan akuntabilitas keuangan lembaga publik.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <h2 class="text-xs font-bold text-gold-600 uppercase tracking-widest mb-2">Experience</h2>
+                <h3 class="text-3xl font-extrabold text-navy-900 sm:text-4xl">Pengalaman Magang</h3>
+            </div>
+
+            <!-- Kartu Magang -->
+            <div class="bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-xl bg-emerald-800 text-white flex items-center justify-center font-bold text-xl shadow-md">
+                            BSI
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-navy-900">Bank Syariah Indonesia (BSI)</h4>
+                            <p class="text-gold-600 font-semibold text-sm">Back Office Intern</p>
+                        </div>
+                    </div>
+                    <div class="text-left sm:text-right">
+                        <span class="inline-block px-3 py-1 rounded-full bg-slate-200 text-slate-700 text-xs font-semibold">Februari 2025 – Maret 2025</span>
+                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-location-dot"></i> Kota Bandung, Jawa Barat</p>
+                    </div>
+                </div>
+
+                <!-- Poin Pengalaman -->
+                <div class="space-y-4">
+                    <h5 class="text-xs font-bold uppercase text-slate-400 tracking-wider">Tugas & Kegiatan Utama:</h5>
+                    <ul class="space-y-3 text-slate-700 text-sm sm:text-base">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-gold-600 mt-1 text-sm"></i>
+                            <span>Melakukan pemindaian (scanning) dan digitalisasi dokumen nasabah untuk mendukung kebutuhan administrasi dan operasional tim marketing.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-gold-600 mt-1 text-sm"></i>
+                            <span>Mengelompokkan dan mengorganisasi data dari 30 nasabah berdasarkan jenis dokumen guna memudahkan pengelolaan dan pencarian data.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-gold-600 mt-1 text-sm"></i>
+                            <span>Membantu memeriksa kelengkapan persyaratan pengajuan Kredit Usaha Rakyat (KUR) bagi 4 nasabah untuk mendukung proses administrasi pengajuan pembiayaan.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-gold-600 mt-1 text-sm"></i>
+                            <span>Membantu proses pembuatan Nomor Pokok Wajib Pajak (NPWP) bagi nasabah sesuai kebutuhan administrasi.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-gold-600 mt-1 text-sm"></i>
+                            <span>Berpartisipasi dalam kegiatan promosi produk Cicil Emas (Cilem) BSI dengan membantu operasional stan promosi, menyampaikan informasi produk, dan berinteraksi dengan calon nasabah.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Galeri Dokumentasi Magang -->
+                <div class="pt-4 border-t border-slate-200">
+                    <h5 class="text-xs font-bold uppercase text-slate-400 tracking-wider mb-4">Dokumentasi Magang</h5>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="rounded-xl overflow-hidden border border-slate-200 shadow-sm aspect-video group">
+                            <img src="https://i.ibb.co.com/LWvMQyj/IMG-20250224-WA0014.jpg" 
+                                 alt="Dokumentasi Magang BSI 1" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/400x300/0F172A/F59E0B?text=Kegiatan+BSI+1';">
+                        </div>
+                        <div class="rounded-xl overflow-hidden border border-slate-200 shadow-sm aspect-video group">
+                            <img src="https://i.ibb.co.com/8gyFjFht/IMG-20250211-WA0024.jpg" 
+                                 alt="Dokumentasi Magang BSI 2" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/400x300/0F172A/F59E0B?text=Kegiatan+BSI+2';">
+                        </div>
+                        <div class="rounded-xl overflow-hidden border border-slate-200 shadow-sm aspect-video group">
+                            <img src="https://i.ibb.co.com/BH8J2fS1/IMG-20250211-WA0021.jpg" 
+                                 alt="Dokumentasi Magang BSI 3" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/400x300/0F172A/F59E0B?text=Kegiatan+BSI+3';">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS & PUBLICATIONS -->
+    <section id="projects" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <h2 class="text-xs font-bold text-gold-600 uppercase tracking-widest mb-2">Projects & Publications</h2>
+                <h3 class="text-3xl font-extrabold text-navy-900 sm:text-4xl">Proyek Akhir & Penelitian</h3>
+            </div>
+
+            <!-- Proyek Penelitian Skripsi Lengkap -->
+            <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-8">
+                
+                <!-- Judul Utama Riset -->
+                <div>
+                    <span class="px-3 py-1 rounded bg-navy-900 text-gold-400 text-xs font-bold uppercase tracking-wider inline-block mb-3">Undergraduate Thesis / Skripsi</span>
+                    <h4 class="text-xl sm:text-2xl font-extrabold text-navy-900 leading-snug">
+                        Pengaruh Transparansi Keuangan dan Akuntabilitas Pengelola terhadap Kepercayaan Muzakki pada Lembaga Zakat <span class="text-gold-600">(Studi Kasus di BAZNAS Provinsi Jawa Barat)</span>
+                    </h4>
+                </div>
+
+                <!-- Deskripsi Lengkap Riset -->
+                <div class="text-slate-700 text-sm sm:text-base leading-relaxed bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
+                    <p>
+                        Melaksanakan penelitian kuantitatif dengan mengelola dan menganalisis data primer dari 154 responden. Bertanggung jawab dalam pengumpulan data, verifikasi uji validitas dan reliabilitas, serta pengolahan data secara sistematis untuk mendukung analisis pengaruh Transparansi Keuangan dan Akuntabilitas Pengelola terhadap Kepercayaan Muzakki.
+                    </p>
+                    <p>
+                        Mengembangkan kemampuan pengelolaan data kuantitatif, analisis statistik regresi, penyusunan laporan ilmiah, serta administrasi dokumen melalui pelaksanaan tugas akhir secara mandiri dan terstruktur.
+                    </p>
+                </div>
+
+                <!-- Poin-Poin Pencapaian -->
+                <div class="space-y-3">
+                    <h5 class="text-xs font-bold uppercase text-slate-400 tracking-wider">Pencapaian:</h5>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div class="p-3.5 rounded-xl bg-white border border-slate-200 flex items-start gap-3 shadow-xs">
+                            <i class="fa-solid fa-chart-line text-gold-600 mt-1"></i>
+                            <span class="text-xs sm:text-sm text-slate-700">Mengelola dan menganalisis data kuesioner dari 154 responden secara akurat.</span>
+                        </div>
+                        <div class="p-3.5 rounded-xl bg-white border border-slate-200 flex items-start gap-3 shadow-xs">
+                            <i class="fa-solid fa-file-signature text-gold-600 mt-1"></i>
+                            <span class="text-xs sm:text-sm text-slate-700">Menyusun laporan penelitian secara sistematis dan terstruktur sesuai kaidah akademis.</span>
+                        </div>
+                        <div class="p-3.5 rounded-xl bg-white border border-slate-200 flex items-start gap-3 shadow-xs">
+                            <i class="fa-solid fa-magnifying-glass-chart text-gold-600 mt-1"></i>
+                            <span class="text-xs sm:text-sm text-slate-700">Menghasilkan analisis yang memberikan gambaran mengenai pengaruh faktor transparansi keuangan dan pengelolaan kebijakan terhadap preferensi publik.</span>
+                        </div>
+                        <div class="p-3.5 rounded-xl bg-white border border-slate-200 flex items-start gap-3 shadow-xs">
+                            <i class="fa-solid fa-database text-gold-600 mt-1"></i>
+                            <span class="text-xs sm:text-sm text-slate-700">Meningkatkan kemampuan pengelolaan data, administrasi dokumen, dan penyusunan laporan berbasis data.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Galeri 3 Gambar Publikasi & Riset -->
+                <div class="pt-4 border-t border-slate-200">
+                    <h5 class="text-xs font-bold uppercase text-slate-400 tracking-wider mb-4">Dokumentasi Publikasi & Hasil Riset</h5>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        
+                        <!-- Gambar 1 -->
+                        <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-shadow group flex flex-col">
+                            <div class="aspect-[4/3] overflow-hidden bg-slate-200">
+                                <img src="https://i.ibb.co.com/cp7fdTF/Cam-Scanner-25-07-2026-23-15-1.jpg" 
+                                     alt="Dokumen Administrasi Penelitian" 
+                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                     onerror="this.onerror=null; this.src='https://placehold.co/400x300/0F172A/F59E0B?text=Dokumen+Administrasi';">
+                            </div>
+                            <div class="p-3 text-center">
+                                <p class="text-xs font-bold text-navy-900">Dokumen Administrasi Penelitian</p>
+                                <p class="text-[10px] text-slate-500">Berkas Pendukung & Verifikasi Data</p>
+                            </div>
+                        </div>
+
+                        <!-- Gambar 2 -->
+                        <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-shadow group flex flex-col">
+                            <div class="aspect-[4/3] overflow-hidden bg-slate-200">
+                                <img src="https://i.ibb.co.com/TxwTPjjD/SKRIPSI-DIGILIB-Syarif-M-F-1-page-0001.jpg" 
+                                     alt="Halaman Sampul Digilib UIN Bandung" 
+                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                     onerror="this.onerror=null; this.src='https://placehold.co/400x300/0F172A/F59E0B?text=Digilib+Cover';">
+                            </div>
+                            <div class="p-3 text-center">
+                                <p class="text-xs font-bold text-navy-900">Publikasi Digilib UIN Bandung</p>
+                                <p class="text-[10px] text-slate-500">Halaman Depan Digital Library</p>
+                            </div>
+                        </div>
+
+                        <!-- Gambar 3 -->
+                        <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-shadow group flex flex-col">
+                            <div class="aspect-[4/3] overflow-hidden bg-slate-200">
+                                <img src="https://i.ibb.co.com/FLtTXCHT/SKRIPSI-DIGILIB-Syarif-M-F-5-page-0001.jpg" 
+                                     alt="Laporan Pengolahan Data Skripsi" 
+                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                     onerror="this.onerror=null; this.src='https://placehold.co/400x300/0F172A/F59E0B?text=Analisis+Data';">
+                            </div>
+                            <div class="p-3 text-center">
+                                <p class="text-xs font-bold text-navy-900">Pengolahan & Analisis Data</p>
+                                <p class="text-[10px] text-slate-500">Hasil Olah Data Kuantitatif</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <h2 class="text-xs font-bold text-gold-600 uppercase tracking-widest mb-2">Skills & Tools</h2>
+                <h3 class="text-3xl font-extrabold text-navy-900 sm:text-4xl">Keahlian & Perangkat Lunak</h3>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Hard & Soft Skills -->
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-lg font-bold text-navy-900 mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-briefcase text-gold-600"></i> Hard Skills
+                        </h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-4 py-2 rounded-xl bg-slate-100 text-slate-800 text-sm font-semibold border border-slate-200">Pengolahan Data</span>
+                            <span class="px-4 py-2 rounded-xl bg-slate-100 text-slate-800 text-sm font-semibold border border-slate-200">Administrasi Keuangan</span>
+                            <span class="px-4 py-2 rounded-xl bg-slate-100 text-slate-800 text-sm font-semibold border border-slate-200">Pengelolaan & Pencatatan Keuangan</span>
+                            <span class="px-4 py-2 rounded-xl bg-slate-100 text-slate-800 text-sm font-semibold border border-slate-200">Penyusunan Laporan Keuangan</span>
+                            <span class="px-4 py-2 rounded-xl bg-slate-100 text-slate-800 text-sm font-semibold border border-slate-200">Administrasi Perbankan</span>
+                            <span class="px-4 py-2 rounded-xl bg-slate-100 text-slate-800 text-sm font-semibold border border-slate-200">Pengelolaan Dokumen</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <h4 class="text-lg font-bold text-navy-900 mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-user-check text-gold-600"></i> Soft Skills
+                        </h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-4 py-2 rounded-xl bg-gold-50 text-gold-800 text-sm font-semibold border border-gold-200">Problem Solving</span>
+                            <span class="px-4 py-2 rounded-xl bg-gold-50 text-gold-800 text-sm font-semibold border border-gold-200">Communication</span>
+                            <span class="px-4 py-2 rounded-xl bg-gold-50 text-gold-800 text-sm font-semibold border border-gold-200">Teamwork</span>
+                            <span class="px-4 py-2 rounded-xl bg-gold-50 text-gold-800 text-sm font-semibold border border-gold-200">Time Management</span>
+                            <span class="px-4 py-2 rounded-xl bg-gold-50 text-gold-800 text-sm font-semibold border border-gold-200">Attention to Detail</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Software Skills dengan Logo -->
+                <div>
+                    <h4 class="text-lg font-bold text-navy-900 mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-laptop-code text-gold-600"></i> Software Skill
+                    </h4>
+                    <p class="text-xs text-slate-500 mb-6">Perangkat lunak yang dikuasai untuk mendukung pekerjaan kantor, olah data, serta pembuatan presentasi.</p>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <!-- Excel -->
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-gold-500 hover:bg-white transition-all text-center flex flex-col items-center justify-center gap-2 group">
+                            <i class="fa-solid fa-file-excel text-3xl text-emerald-600 group-hover:scale-110 transition-transform"></i>
+                            <span class="font-bold text-sm text-navy-900">Microsoft Excel</span>
+                            <span class="text-[10px] text-slate-500">Olah Data & Rumus Dasar</span>
+                        </div>
+
+                        <!-- Word -->
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-gold-500 hover:bg-white transition-all text-center flex flex-col items-center justify-center gap-2 group">
+                            <i class="fa-solid fa-file-word text-3xl text-blue-600 group-hover:scale-110 transition-transform"></i>
+                            <span class="font-bold text-sm text-navy-900">Microsoft Word</span>
+                            <span class="text-[10px] text-slate-500">Penyusunan Surat & Laporan</span>
+                        </div>
+
+                        <!-- PowerPoint -->
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-gold-500 hover:bg-white transition-all text-center flex flex-col items-center justify-center gap-2 group">
+                            <i class="fa-solid fa-file-powerpoint text-3xl text-orange-600 group-hover:scale-110 transition-transform"></i>
+                            <span class="font-bold text-sm text-navy-900">PowerPoint</span>
+                            <span class="text-[10px] text-slate-500">Desain Slide Presentasi</span>
+                        </div>
+
+                        <!-- MS Office -->
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-gold-500 hover:bg-white transition-all text-center flex flex-col items-center justify-center gap-2 group">
+                            <i class="fa-brands fa-microsoft text-3xl text-red-500 group-hover:scale-110 transition-transform"></i>
+                            <span class="font-bold text-sm text-navy-900">Microsoft Office</span>
+                            <span class="text-[10px] text-slate-500">Administrasi Perkuliahan & Kerja</span>
+                        </div>
+
+                        <!-- Canva -->
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-gold-500 hover:bg-white transition-all text-center flex flex-col items-center justify-center gap-2 group">
+                            <i class="fa-solid fa-palette text-3xl text-cyan-500 group-hover:scale-110 transition-transform"></i>
+                            <span class="font-bold text-sm text-navy-900">Canva</span>
+                            <span class="text-[10px] text-slate-500">Desain Banner & Visual</span>
+                        </div>
+
+                        <!-- CapCut -->
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-gold-500 hover:bg-white transition-all text-center flex flex-col items-center justify-center gap-2 group">
+                            <i class="fa-solid fa-video text-3xl text-slate-900 group-hover:scale-110 transition-transform"></i>
+                            <span class="font-bold text-sm text-navy-900">CapCut</span>
+                            <span class="text-[10px] text-slate-500">Edit Video Sederhana</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <h2 class="text-xs font-bold text-gold-600 uppercase tracking-widest mb-2">Certificates</h2>
+                <h3 class="text-3xl font-extrabold text-navy-900 sm:text-4xl">Sertifikat & Pelatihan</h3>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Sertifikat 1: TOAFL -->
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition-shadow group">
+                    <div class="aspect-[1.41/1] overflow-hidden rounded-xl border border-slate-100 bg-slate-50 mb-3">
+                        <img src="https://i.ibb.co.com/ccFzTN9v/TOAFL-page-0001.jpg" 
+                             alt="Sertifikat TOAFL" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.onerror=null; this.src='https://placehold.co/500x350/0F172A/F59E0B?text=Sertifikat+TOAFL';">
+                    </div>
+                    <h4 class="font-bold text-navy-900 text-sm">Sertifikat TOAFL</h4>
+                    <p class="text-xs text-slate-500">Kemahiran Bahasa Arab</p>
+                </div>
+
+                <!-- Sertifikat 2: TOEFA -->
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition-shadow group">
+                    <div class="aspect-[1.41/1] overflow-hidden rounded-xl border border-slate-100 bg-slate-50 mb-3">
+                        <img src="https://i.ibb.co.com/wFkvx8PC/TOEFA-page-0001.jpg" 
+                             alt="Sertifikat TOEFA" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.onerror=null; this.src='https://placehold.co/500x350/0F172A/F59E0B?text=Sertifikat+TOEFA';">
+                    </div>
+                    <h4 class="font-bold text-navy-900 text-sm">Sertifikat TOEFA</h4>
+                    <p class="text-xs text-slate-500">Kemahiran Bahasa Inggris</p>
+                </div>
+
+                <!-- Sertifikat 3: Sertifikasi ICT -->
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition-shadow group">
+                    <div class="aspect-[1.41/1] overflow-hidden rounded-xl border border-slate-100 bg-slate-50 mb-3">
+                        <img src="https://i.ibb.co.com/k2jzPNJ8/Sertifikat-ICT-SYARIF-MUHAMMAD-FADHILAH-page-0001.jpg" 
+                             alt="Sertifikat ICT" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.onerror=null; this.src='https://placehold.co/500x350/0F172A/F59E0B?text=Sertifikat+ICT';">
+                    </div>
+                    <h4 class="font-bold text-navy-900 text-sm">Sertifikasi ICT</h4>
+                    <p class="text-xs text-slate-500">Kompetensi Komputer & Komunikasi</p>
+                </div>
+
+                <!-- Sertifikat 4: Sertifikat Pendukung -->
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition-shadow group">
+                    <div class="aspect-[1.41/1] overflow-hidden rounded-xl border border-slate-100 bg-slate-50 mb-3">
+                        <img src="https://i.ibb.co.com/TMkCHCQy/ee906f11-349e-4c3d-8794-2b71046f2fda.png" 
+                             alt="Sertifikat Pelatihan" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.onerror=null; this.src='https://placehold.co/500x350/0F172A/F59E0B?text=Sertifikat+Pelatihan';">
+                    </div>
+                    <h4 class="font-bold text-navy-900 text-sm">Sertifikat Pendukung</h4>
+                    <p class="text-xs text-slate-500">Pengembangan Diri & Akademis</p>
+                </div>
+
+                <!-- Sertifikat 5: Sertifikat Pelatihan -->
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition-shadow group">
+                    <div class="aspect-[1.41/1] overflow-hidden rounded-xl border border-slate-100 bg-slate-50 mb-3">
+                        <img src="https://i.ibb.co.com/ZRBmKBhv/1091903294-SF-copy-page-0001.jpg" 
+                             alt="Sertifikat Pelatihan Tambahan" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                             onerror="this.onerror=null; this.src='https://placehold.co/500x350/0F172A/F59E0B?text=Sertifikat+Tambahan';">
+                    </div>
+                    <h4 class="font-bold text-navy-900 text-sm">Sertifikat Pelatihan</h4>
+                    <p class="text-xs text-slate-500">Program Pengembangan Mahasiswa</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-navy-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Informasi Kontak -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs font-bold text-gold-400 uppercase tracking-widest">Get In Touch</span>
+                    <h3 class="text-3xl font-extrabold text-white sm:text-4xl">Hubungi Saya</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Terima kasih telah mengunjungi portofolio saya. Saya terbuka untuk kesempatan kerja di posisi **Finance, Administration, Banking, maupun Operations**. Silakan hubungi saya melalui kontak di bawah ini.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 text-gold-400 flex items-center justify-center">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Telepon / WhatsApp</p>
+                                <a href="https://wa.me/6285295275926" target="_blank" class="text-sm font-semibold text-white hover:text-gold-400">085295275926</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 text-gold-400 flex items-center justify-center">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Email</p>
+                                <a href="mailto:syarifmuhammadf01@gmail.com" class="text-sm font-semibold text-white hover:text-gold-400">syarifmuhammadf01@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 text-gold-400 flex items-center justify-center">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">LinkedIn Profile</p>
+                                <a href="https://www.linkedin.com/in/syarif-muhammad-fadhilah-6059a9435" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-white hover:text-gold-400 underline decoration-gold-500 underline-offset-4">Syarif Muhammad Fadhilah</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 text-gold-400 flex items-center justify-center">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Lokasi</p>
+                                <p class="text-sm font-semibold text-white">Bandung, Jawa Barat, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulir Pesan -->
+                <div class="lg:col-span-7 bg-slate-800/80 p-6 sm:p-8 rounded-2xl border border-slate-700 shadow-xl">
+                    <form id="contact-form" class="space-y-4" onsubmit="handleFormSubmit(event)">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Nama Lengkap</label>
+                                <input type="text" required placeholder="Nama Anda" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-gold-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Email</label>
+                                <input type="email" required placeholder="nama@email.com" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-gold-500">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Subjek</label>
+                            <input type="text" required placeholder="Peluang Kerja / Pesan" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-gold-500">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Pesan</label>
+                            <textarea rows="4" required placeholder="Tuliskan pesan Anda..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-gold-500"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 rounded-xl bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold text-sm transition-colors shadow-lg">
+                            Kirim Pesan
+                        </button>
+                    </form>
+
+                    <!-- Alert / Notifikasi -->
+                    <div id="form-alert" class="hidden mt-4 p-4 rounded-xl bg-emerald-500/20 border border-emerald-500 text-emerald-300 text-xs text-center font-semibold">
+                        Pesan Anda telah terkirim! Terima kasih.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy-950 py-8 border-t border-slate-800 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p>© 2026 Syarif Muhammad Fadhilah. All rights reserved.</p>
+            <p class="mt-1 text-[11px] text-slate-600">Built with HTML5 & Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Mobile Navigation & Formulir -->
+    <script>
+        // Toggle Navigasi Mobile
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Tutup Navigasi Mobile Saat Link Diklik
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Penanganan Formulir Kontak
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const alertBox = document.getElementById('form-alert');
+            alertBox.classList.remove('hidden');
+            setTimeout(() => {
+                alertBox.classList.add('hidden');
+                document.getElementById('contact-form').reset();
+            }, 3500);
+        }
+    </script>
+</body>
+</html>
